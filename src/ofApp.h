@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+#include "ofxAutoReloadedShader.h"
 
 class ofApp : public ofBaseApp{
 
@@ -21,4 +23,15 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 		
+    ofxPanel gui;
+    ofParameter<float>u_01,u_02,u_03,u_04;
+    ofParameter<ofColor>u_color;
+    vector<bool>bools;
+    
+    
+    ofFbo fbo;
+    
+    map<int,ofTexture>masks;
+    map<int,ofxAutoReloadedShader>shader;
+    
 };
