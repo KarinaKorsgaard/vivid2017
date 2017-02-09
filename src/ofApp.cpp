@@ -99,11 +99,14 @@ void ofApp::draw(){
     
     fbo.draw(0, 0, fbo.getWidth()/2,fbo.getHeight()/2);
     gui.draw();
+    ofSetColor(255);
+    ofDrawBitmapString("press 1 2 or 3 to toggle grids", 10, gui.getHeight()+30);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    if(key - '0' < 3)bools[key-'0']=!bools[key-'0'];
+    int k = key - '0';
+    if( k<4 && k>0 )bools[k-1]=!bools[k-1];
 }
 
 //--------------------------------------------------------------

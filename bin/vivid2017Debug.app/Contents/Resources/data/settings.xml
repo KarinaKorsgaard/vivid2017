@@ -32,8 +32,8 @@
 			<u_color>255, 255, 255, 255</u_color>
 		</cloud>
 		<voronoise>
-			<u_size>4.69388</u_size>
-			<u_smooth>0.22449</u_smooth>
+			<u_size>1.12245</u_size>
+			<u_smooth>0.0816327</u_smooth>
 			<u_color>255, 255, 255, 255</u_color>
 		</voronoise>
 	</gui>
