@@ -5,4 +5,36 @@
 	<u_04>0.75</u_04>
 	<u_color>176, 192, 236, 255</u_color>
 <group/>
+<glow>
+		<u_density>1.63265</u_density>
+		<u_color>255, 255, 255, 255</u_color>
+	</glow>
+	<cloud>
+		<u_balance>0.52551</u_balance>
+		<u_contrast>3.97959</u_contrast>
+		<u_zoom>50</u_zoom>
+		<u_color>255, 255, 255, 255</u_color>
+	</cloud>
+	<voronoise>
+		<u_size>3.97959</u_size>
+		<u_smooth>0.0867347</u_smooth>
+		<u_color>255, 255, 255, 255</u_color>
+	</voronoise>
+<gui>
+		<glow>
+			<u_density>3.21429</u_density>
+			<u_color>255, 255, 255, 255</u_color>
+		</glow>
+		<cloud>
+			<u_balance>0.581633</u_balance>
+			<u_contrast>2.39796</u_contrast>
+			<u_zoom>62.7551</u_zoom>
+			<u_color>255, 255, 255, 255</u_color>
+		</cloud>
+		<voronoise>
+			<u_size>1.12245</u_size>
+			<u_smooth>0.0816327</u_smooth>
+			<u_color>255, 255, 255, 255</u_color>
+		</voronoise>
+	</gui>
 </group>

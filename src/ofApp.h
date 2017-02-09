@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 #include "ofxAutoReloadedShader.h"
+#include "ofxDmx.h"
 
 class ofApp : public ofBaseApp{
 
@@ -24,8 +25,12 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
     ofxPanel gui;
-    ofParameter<float>u_01,u_02,u_03,u_04;
-    ofParameter<ofColor>u_color;
+    ofParameter<float>u_size,u_smooth;
+    ofParameter<float>u_density;
+    ofParameter<float>u_balance,u_contrast,u_zoom;
+     ofParameterGroup voro,cloud,glow,global;
+    
+    ofParameter<ofColor>u_color1,u_color2,u_color3;
     vector<bool>bools;
     
     

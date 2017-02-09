@@ -10,6 +10,7 @@
 		0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9BF3AA0D4FAA89D0F8A0E545 /* OscReceivedElements.cpp */; };
 		1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 907C5B5E104864A2D3A25745 /* ofxToggle.cpp */; };
 		21E4A0961E48696B00DEDBC1 /* ofxAutoReloadedShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21E4A0941E48696B00DEDBC1 /* ofxAutoReloadedShader.cpp */; };
+		21E4A09F1E48964300DEDBC1 /* ofxDmx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21E4A09D1E48964200DEDBC1 /* ofxDmx.cpp */; };
 		483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78D67A00EB899FAC09430597 /* ofxLabel.cpp */; };
 		4ADB88E2FB52E76A471065DE /* ofxOscParameterSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0AED834CE4DEC5260AF302A2 /* ofxOscParameterSync.cpp */; };
 		510CAFE035E576A4E1502D52 /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6DEF695B88BA5FAACEAA937 /* UdpSocket.cpp */; };
@@ -76,6 +77,8 @@
 		21E4A0971E486C1E00DEDBC1 /* cloud.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = cloud.frag; path = bin/data/shaders/cloud.frag; sourceTree = SOURCE_ROOT; };
 		21E4A0981E486C1E00DEDBC1 /* glow.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = glow.frag; path = bin/data/shaders/glow.frag; sourceTree = SOURCE_ROOT; };
 		21E4A0991E486C1E00DEDBC1 /* voronoise.frag */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = voronoise.frag; path = bin/data/shaders/voronoise.frag; sourceTree = SOURCE_ROOT; };
+		21E4A09D1E48964200DEDBC1 /* ofxDmx.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxDmx.cpp; sourceTree = "<group>"; };
+		21E4A09E1E48964200DEDBC1 /* ofxDmx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxDmx.h; sourceTree = "<group>"; };
 		23640F57DF6C4BB6BFC5DA4C /* PacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h; sourceTree = SOURCE_ROOT; };
 		2834D88A62CD23F3DE2C47D1 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../../addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
 		2FD4B0329909D3527F003494 /* UdpSocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UdpSocket.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h; sourceTree = SOURCE_ROOT; };
@@ -167,6 +170,24 @@
 			name = shaders;
 			sourceTree = "<group>";
 		};
+		21E4A09B1E48964200DEDBC1 /* ofxDmx */ = {
+			isa = PBXGroup;
+			children = (
+				21E4A09C1E48964200DEDBC1 /* src */,
+			);
+			name = ofxDmx;
+			sourceTree = "<group>";
+		};
+		21E4A09C1E48964200DEDBC1 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				21E4A09D1E48964200DEDBC1 /* ofxDmx.cpp */,
+				21E4A09E1E48964200DEDBC1 /* ofxDmx.h */,
+			);
+			name = src;
+			path = ../../../addons/ofxDmx/src;
+			sourceTree = "<group>";
+		};
 		30CB364908817057B430D528 /* osc */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +277,7 @@
 				480A780D8D0308AE4A368801 /* ofxGui */,
 				E6053AB7FEC63D5F83825B88 /* ofxOsc */,
 				21E4A0921E48696B00DEDBC1 /* ofxAutoReloadedShader */,
+				21E4A09B1E48964200DEDBC1 /* ofxDmx */,
 			);
 			name = addons;
 			sourceTree = "<group>";
@@ -454,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				21E4A09F1E48964300DEDBC1 /* ofxDmx.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				856AA354D08AB4B323081444 /* ofxBaseGui.cpp in Sources */,
 				5CBB2AB3A60F65431D7B555D /* ofxButton.cpp in Sources */,

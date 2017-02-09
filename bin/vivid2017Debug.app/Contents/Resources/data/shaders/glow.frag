@@ -10,8 +10,7 @@ uniform vec2 iResolution;
 uniform float iGlobalTime;
 uniform sampler2D mask;
 
-uniform float u_01;
-uniform float u_02;
+uniform float u_density;
 uniform vec3 u_color;
 
 
@@ -150,7 +149,7 @@ void main()
         
         // --------------------------------------------------------------------------------
         // Now that we have done our ray marching, let's put some color on this.
-        vec3 semiFinal = vec3(u_color*0.0001)* density*u_01;
+        vec3 semiFinal = vec3(u_color*0.0001)* density*u_density; //u_density
        // finalColor.a = (semiFinal.x*semiFinal.y*semiFinal.z)/3.;
         finalColor = vec4(sqrt(clamp(semiFinal, 0.0, 1.0)),1.) ;
     }

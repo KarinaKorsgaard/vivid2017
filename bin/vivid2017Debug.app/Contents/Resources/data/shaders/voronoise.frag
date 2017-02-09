@@ -6,9 +6,8 @@ uniform vec2 iResolution;
 uniform float iGlobalTime;
 uniform sampler2D mask;
 
-uniform float u_01;
-uniform float u_02;
-uniform float u_03;
+uniform float u_size; // 10-1
+uniform float u_smooth; //0-1
 uniform vec3 u_color;
 
 vec2 hash( vec2 p ) { p=vec2(dot(p,vec2(127.1,311.7)),dot(p,vec2(269.5,183.3))); return fract(sin(p)*18.5453); }
@@ -44,12 +43,12 @@ void main()
         vec2 p = gl_FragCoord.xy/max(iResolution.x,iResolution.y);
         
         // computer voronoi patterm
-        vec2 c = voronoi( 19.0+36.0*u_01*p );
+        vec2 c = voronoi( 19.0+36.0* u_size *p ); // u_size
         
         // colorize
         vec3 col = vec3(1.);//0.5 + 0.5*cos( c.y*6.2831 + vec3(0.0,1.0,2.0) );
         
-        col *= clamp(u_02*100.0*c.x*c.x,0.0,1.0);
+        col *= clamp(u_smooth*100.0*c.x*c.x,0.0,1.0); // u_smooth 0-1
         col -= (1.0-smoothstep( 0.08, 0.09, c.x));
         float alpha =1.;
         

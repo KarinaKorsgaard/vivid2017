@@ -10,9 +10,9 @@ uniform vec2 iResolution;
 uniform float iGlobalTime;
 uniform sampler2D mask;
 
-uniform float u_01;
-uniform float u_02;
-uniform float u_03;
+uniform float u_contrast;
+uniform float u_balance;
+uniform float u_zoom;
 uniform vec3 u_color;
 
 
@@ -163,11 +163,11 @@ void main( )
         
         vec2 uv = gl_FragCoord.xy / iResolution.xy*1.0-0.5;
         uv.x*=(iResolution.x/iResolution.y);
-        uv*=u_01*10.0;
+        uv*=1.*u_zoom; //u_01
         float n = 0.0;
-        n = cloud(vec3(iGlobalTime*0.1, vec2(uv)), u_02, true, true);
+        n = cloud(vec3(iGlobalTime*0.1, vec2(uv)), u_balance, true, true); //u_balance
         
-        n = ((n - 0.5) * max(u_03, 0.0)) + 0.5;
+        n = ((n - 0.5) * max(u_contrast, 0.0)) + 0.5; // u_contrast
         
         float a = 1.0;
         a = n;

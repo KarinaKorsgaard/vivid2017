@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC88F13F492C2CD3E04A2C25EACAFFFA0F998FEA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EC88F13F492C2CD3E04A2C25EACAFFFA0F998FEA" : 0,
+    "1C584D82D8F91B619E103DBEA051F0CCC0070ED3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DF45CBED-A351-4C28-849B-41712BE2B9AF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EC88F13F492C2CD3E04A2C25EACAFFFA0F998FEA" : "_vivid2017\/",
+    "1C584D82D8F91B619E103DBEA051F0CCC0070ED3" : "..\/..\/addons\/ofxDmx"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "vivid2017",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "vivid2017.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kylemcdonald\/ofxDmx.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C584D82D8F91B619E103DBEA051F0CCC0070ED3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KarinaKorsgaard\/vivid2017.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC88F13F492C2CD3E04A2C25EACAFFFA0F998FEA"
+    }
+  ]
+}
